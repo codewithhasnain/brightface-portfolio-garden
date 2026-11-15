@@ -13,7 +13,7 @@ export function CtaBand({
     <section className="px-4 sm:px-6">
       <Reveal className="grain relative mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-sun px-6 py-16 text-primary-foreground shadow-sun sm:px-14 sm:py-20">
         <div className="pointer-events-none absolute -right-24 -top-24 size-96 rounded-full bg-butter/40 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-32 -left-20 size-96 rounded-full bg-aqua/30 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-32 -left-20 size-96 rounded-full bg-primary-deep/40 blur-3xl" />
         <div className="relative grid items-end gap-10 lg:grid-cols-[1.3fr_1fr]">
           <div>
             <p className="eyebrow opacity-80">Get in touch</p>

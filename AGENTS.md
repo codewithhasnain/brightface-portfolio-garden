@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site chrome (header, footer, toaster) lives in `src/routes/__root.tsx`; shared site pieces live in `src/components/site/`. Why: one place for layout used by every page.
+- Contact details (phone, WhatsApp, email) come only from `src/lib/contact.ts`. Why: they appear on many pages and must stay consistent.
+- Each page's first section uses the `under-header` utility so background glows run behind the floating header. Why: avoids a visible seam under the sticky header.
