@@ -33,3 +33,4 @@ use the editor.
 - Site chrome (header, footer, toaster) lives in `src/routes/__root.tsx`; shared site pieces live in `src/components/site/`. Why: one place for layout used by every page.
 - Contact details (phone, WhatsApp, email) come only from `src/lib/contact.ts`. Why: they appear on many pages and must stay consistent.
 - Each page's first section uses the `under-header` utility so background glows run behind the floating header. Why: avoids a visible seam under the sticky header.
+- UI libraries imported by the site are listed in `optimizeDeps.include` in `vite.config.ts`; add new client deps there. Why: mid-session dependency re-optimization left the preview with two React copies and a blank screen.
